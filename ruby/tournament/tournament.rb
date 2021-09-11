@@ -44,8 +44,8 @@ class Tournament
     end
 
     def create_table(results)
-      results.sort do |team1, team2|
-        team2.last[:p] <=> team1.last[:p]
+      results.sort_by do |team|
+        [-team.last[:p], team.first]
       end.reject { |result| result.last[:mp].zero? }.map do |result|
         structure([result.first, result.last.values].flatten)
       end.prepend(header).join('')
