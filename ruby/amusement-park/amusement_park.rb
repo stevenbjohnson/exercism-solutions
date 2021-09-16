@@ -1,7 +1,6 @@
 class Attendee
   def initialize(height)
     @height = height
-    @pass_id = nil
   end
 
   def height
