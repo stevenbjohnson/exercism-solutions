@@ -1,7 +1,35 @@
 # exercism-solutions
 These are my solutions to the lessons I take on exercism.org
 
-Note from exercism regarding licensing:
+To run tests or watch files for TDD you need to install [bundler](https://bundler.io/) for Ruby and/or
+[yarn](https://classic.yarnpkg.com/lang/en/docs/install) for JavaScript then run either or both of these:
+
+```bash
+bundle install
+yarn install
+```
+
+
+To be able to submit and download new exercises you need to install `exercism`:
+
+Mac:
+
+```bash
+brew update
+brew install exercism
+```
+For other platforms: https://exercism.org/cli-walkthrough
+
+After `exercism` is installed it must be configured to use your API token:
+
+```bash
+exercism configure --token=<your-api-token>
+```
+For additional assistance with the `exercism` CLI see: https://exercism.org/docs/using/solving-exercises/working-locally
+
+<hr>
+
+##### Note from exercism regarding licensing:
 
 Our Content
 All materials displayed on our Website and/or Platform are Copyright Exercism.
