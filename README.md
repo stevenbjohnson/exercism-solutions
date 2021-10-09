@@ -8,7 +8,19 @@ To run tests or watch files for TDD you need to install [bundler](https://bundle
 bundle install
 yarn install
 ```
+Afterwards you can run `bundle exec guard` for Ruby or `yarn watch` for Javascript TDD.
+I pefer to use this bash function for running single tests (must be run from the exercise directory):
 
+```bash
+alias etest() {
+  if [ -f package.json ]
+  then
+    yarn test
+  else
+    ruby *_test.rb -c
+  fi
+}
+```
 
 To be able to submit and download new exercises you need to install `exercism`:
 
