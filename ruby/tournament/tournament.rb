@@ -32,7 +32,7 @@ class Tournament
       tournament
         .sort_by { |result| [-result.last[:points], result.first] }
         .reject { |result| result.last[:matches_played].zero? }
-        &.map { |result| structure([result.first, result.last.values].flatten) }
+        .map { |result| structure([result.first, result.last.values].flatten) }
         .join
   end
 
