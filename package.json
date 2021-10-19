@@ -40,5 +40,8 @@
     "watch": "jest --no-cache --watch ./*",
     "lint": "eslint .",
     "bootstrap": "lerna bootstrap --use-workspaces"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.9"
   }
 }
