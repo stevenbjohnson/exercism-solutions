@@ -1,4 +1,6 @@
 // @ts-check
+// Added the following to fix "ReferenceError: regeneratorRuntime is not defined" - Joe Sharp
+import "regenerator-runtime/runtime.js"
 
 import {
   frontDoorResponse as frontDoorPatron,
