@@ -15,7 +15,7 @@ class Attendee
 
   # rubocop:disable Naming/PredicateName
   def has_pass?
-    !@pass_id.nil?
+    !!@pass_id
   end
   # rubocop:enable Naming/PredicateName
 
