@@ -31,7 +31,7 @@
       "hello_world_test.rb"
     ],
     "example": [
-      ".meta/solutions/hello_world.rb"
+      ".meta/example.rb"
     ]
   },
   "source": "This is an exercise to introduce users to using Exercism",
